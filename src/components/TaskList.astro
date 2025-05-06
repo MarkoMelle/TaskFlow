@@ -1,0 +1,51 @@
+---
+
+---
+<figure class="w-full rounded-xl bg-gray-800 p-4 mb-1">
+   <h2 class="text-lg font-semibold mb-4">Актуальные задачи</h2>
+   <table class="w-full table-auto border-separate border-spacing-y-2 text-sm">
+     <thead>
+       <tr class="text-gray-400">
+         <th class="text-left pr-3 whitespace-nowrap">Предмет</th>
+         <th class="text-left px-3 whitespace-nowrap">Дедлайн</th>
+         <th class="text-left px-3">Описание</th>
+         <th class="text-left px-3">✔</th>
+       </tr>
+     </thead>
+     <tbody id="tasks-body"></tbody>
+   </table>
+ </figure>
+ 
+ <figure class="w-full rounded-xl bg-gray-800 p-4 mb-1">
+   <button
+     id="toggle-completed"
+     class="w-full flex justify-between items-center text-sm text-blue-500 hover:text-blue-600 transition"
+   >
+     <span class="text-lg font-semibold">Выполненные задачи</span>
+     <svg
+       id="chevron-icon"
+       class="w-5 h-5 transition-transform"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       viewBox="0 0 24 24"
+     >
+       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+     </svg>
+   </button>
+   <div id="completed-wrapper" class="hidden">
+     <table class="w-full table-auto border-separate border-spacing-y-2 text-sm">
+       <thead>
+         <tr class="text-gray-400">
+           <th class="text-left pr-3 whitespace-nowrap">Предмет</th>
+           <th class="text-left px-3 whitespace-nowrap">Дедлайн</th>
+           <th class="text-left px-3">Описание</th>
+           <th class="text-left px-3">✔</th>
+         </tr>
+       </thead>
+       <tbody id="completed-body"></tbody>
+     </table>
+   </div>
+ </figure>
+ 
+ 

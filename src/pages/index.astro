@@ -1,11 +1,24 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
+import TaskList from "../components/TaskList.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+
+
+
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задачи</title>
+    <!-- Tailwind глобальные стили -->
+  </head>
+  <body class="bg-transparent text-white w-full h-full m-0">
+    <TaskList />
+	 <script type="module">
+      import { initTasks } from "../scripts/tasks.js";
+      window.addEventListener('DOMContentLoaded', initTasks);
+    </script>
+  </body>
+</html>

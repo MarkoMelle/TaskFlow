@@ -84,3 +84,4 @@ export const tasks = [
    renderAll();
  }
  
+window.addEventListener('DOMContentLoaded', initTasks);

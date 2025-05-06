@@ -3,9 +3,6 @@ import "../styles/global.css";
 import TaskList from "../components/TaskList.astro";
 ---
 
-
-
-
 <!DOCTYPE html>
 <html lang="ru" class="dark">
   <head>
@@ -16,9 +13,6 @@ import TaskList from "../components/TaskList.astro";
   </head>
   <body class="bg-transparent text-white w-full h-full m-0">
     <TaskList />
-	 <script type="module">
-      import { initTasks } from "../scripts/tasks.js";
-      window.addEventListener('DOMContentLoaded', initTasks);
-    </script>
+    <script type="module" src="/scripts/tasks.js"></script>
   </body>
 </html>
